@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css" />
+
 </head>
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <body>
@@ -27,15 +29,15 @@
           <a class="nav-link" id="iniciarSesion" href="login.php">Iniciar Sesion</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Contacto</a>
+          <a class="nav-link" href="#">Contacto</a>
         </li>
       </ul>
     </div>
   </nav>
-  <div class="container wrapper">
-    <form onsubmit="return chequearForm(event)">
-      <label class="pageTitle title">Formulario </label>
-      <label class="secondaryTitle title">Complete el formulario de aca abajo.</label>
+  <div class="container wrappe contenedor">
+      <h1>Formulario</h1>
+      <form onsubmit="return chequearForm(event)">
+      <label class="secondaryTitle title">Complete el formulario de aca abajo</label>
       <div class="form-group">
         <label>Ingrese el nombre</label>
         <input type="text" class="nombre form-control" id="nombre" placeholder="Name" />
