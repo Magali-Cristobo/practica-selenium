@@ -25,7 +25,7 @@
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Contraseña" id="password" />
             </div>
-            <button value="Login" class="btn solid">Iniciar</button>
+            <button class="btn solid">Iniciar</button>
             <p class="social-text">O usa una de estas opciones</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -47,13 +47,12 @@
     </div>
     <script>
       function irAInicio(){
-        console.log(document.getElementById("usuario").value);
         if(document.getElementById("usuario").value!="" && document.getElementById("password").value!=""){
+            console.log("entre");
           location.href="index.php";
         }
       }
-      $(".btn").click(irAInicio)
+      $(".btn").click(irAInicio);
     </script>
-    <!-- <script src="app.js"></script> -->
   </body>
 </html>

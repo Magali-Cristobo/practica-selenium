@@ -21,7 +21,7 @@
           <a class="nav-link" id="inicio" href="index.php">Inicio</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" id="inicio" href="formulario.php">Formulario<span class="sr-only">(current)</span></a>
+          <a class="nav-link" id="formulario" href="formulario.php">Formulario<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="iniciarSesion" href="login.php">Iniciar Sesion</a>
