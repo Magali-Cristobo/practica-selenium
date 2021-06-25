@@ -14,10 +14,10 @@
                   <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="formulario.html">Formulario</a>
+                  <a class="nav-link" href="formulario.php">Formulario</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="login.html">Iniciar Sesion</a>
+                  <a class="nav-link" href="login.php">Iniciar Sesion</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link disabled" href="#">Contacto</a>

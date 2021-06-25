@@ -49,7 +49,7 @@
       function irAInicio(){
         console.log(document.getElementById("usuario").value);
         if(document.getElementById("usuario").value!="" && document.getElementById("password").value!=""){
-          location.href="index.html";
+          location.href="index.php";
         }
       }
       $(".btn").click(irAInicio)
