@@ -19,7 +19,7 @@ jobs:
           local-identifier: random
 
       - name: 'Running test on BrowserStack'  # Invokes the actual test script that would run on BrowserStack browsers
-        run: python ../practica-selenium/main.py
+        run: python main.py
 
       - name: 'BrowserStackLocal Stop'  # Terminating the BrowserStackLocal tunnel connection
         uses: browserstack/github-actions/setup-local@master
