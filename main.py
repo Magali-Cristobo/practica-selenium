@@ -32,7 +32,6 @@ def run_session(desired_cap):
         driver.find_element_by_tag_name("button").click()
 
   driver.find_element_by_id("iniciarSesion").click()
-  driver.implicitly_wait(15)
   driver.find_element_by_id("usuario").send_keys("test@gmail.com")
   driver.find_element_by_id("password").send_keys("testest123")
   driver.find_element_by_tag_name("button").click()
@@ -41,9 +40,7 @@ def run_session(desired_cap):
   if driver.find_element_by_tag_name("button").is_displayed():
         driver.find_element_by_tag_name("button").click()
 
-  driver.implicitly_wait(15)
   driver.find_element_by_id("formulario").click()
-  driver.implicitly_wait(15)
   driver.find_element_by_id("nombre").send_keys("Pepe")
   driver.find_element_by_id("email").send_keys("pepe@gmail.com")
   driver.find_element_by_id("mensaje").send_keys("prueba")
@@ -56,7 +53,6 @@ def run_session(desired_cap):
         driver.find_element_by_tag_name("button").click()
 
   driver.find_element_by_id("inicio").click()
-  driver.implicitly_wait(15)
   if(driver.find_element_by_tag_name("h1").text != "Inicio"):
         driver.execute_script('browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"not passed", "reason": "deberia ir a inicio"}}')
 
