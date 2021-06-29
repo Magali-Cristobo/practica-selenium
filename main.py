@@ -46,6 +46,7 @@ def run_session(desired_cap):
   driver.find_element_by_id("email").send_keys("pepe@gmail.com")
   driver.find_element_by_id("mensaje").send_keys("prueba")
   driver.find_element_by_class_name("enviar").click()
+  driver.save_screenshot('formulario.png')
   if(driver.find_element_by_id("resultado").text != "Formulario enviado correctamente!"):
       driver.execute_script('browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"not passed", "reason": "error al enviar el form"}}')
 
@@ -54,6 +55,7 @@ def run_session(desired_cap):
         driver.find_element_by_tag_name("button").click()
 
   driver.find_element_by_id("inicio").click()
+  driver.save_screenshot('inicio.png')
   if(driver.find_element_by_tag_name("h1").text != "Inicio"):
         driver.execute_script('browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"not passed", "reason": "deberia ir a inicio"}}')
 
