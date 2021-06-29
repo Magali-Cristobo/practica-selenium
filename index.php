@@ -12,14 +12,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" id="inicio" href="#">Inicio <span class="sr-only">(current)</span></a>
+                <li class="nav-item active" id="inicio">
+                  <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="formulario" href="formulario.php">Formulario</a>
+                <li class="nav-item" id="formulario" >
+                  <a class="nav-link"href="formulario.php">Formulario</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="iniciarSesion" href="login.php">Iniciar Sesion</a>
+                <li class="nav-item" id="iniciarSesion">
+                  <a class="nav-link" href="login.php">Iniciar Sesion</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contacto</a>
