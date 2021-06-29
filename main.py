@@ -1,3 +1,12 @@
+from threading import Thread
+from time import sleep
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+# This array 'caps' defines the capabilities browser, device and OS combinations where the test will run
 caps=[{
       'os_version': '10',
       'os': 'Windows',
@@ -13,7 +22,15 @@ caps=[{
       'browser_version': 'latest',
       'name': 'Parallel Test2',
       'build': 'browserstack-build-1'
-      }]
+      },
+      {
+      'os_version': 'Big Sur',
+      'os': 'OS X',
+      'browser': 'safari',
+      'browser_version': 'latest',
+      'name': 'Parallel Test3',
+      'build': 'browserstack-build-1'
+}]
 #run_session function searches for 'BrowserStack' on google.com
 def run_session(desired_cap):
   driver = webdriver.Remote(command_executor='https://magalicristobo_Fz0Gnv:LpCyrrE4krEc4FsgWQ93@hub-cloud.browserstack.com/wd/hub', desired_capabilities=desired_cap)
