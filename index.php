@@ -19,7 +19,7 @@
                   <a class="nav-link" id="formulario" href="formulario.php">Formulario</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="iniciarSesion" href="login.php">Iniciar Sesion</a>
+                  <a class="nav-link" id="iniciarSesion" href="login.php" type="button" >Iniciar Sesion</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contacto</a>
