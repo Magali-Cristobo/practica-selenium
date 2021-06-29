@@ -26,7 +26,7 @@
           <a class="nav-link" id="formulario" href="formulario.php">Formulario<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="iniciarSesion" href="login.php">Iniciar Sesion</a>
+          <a class="nav-link" id="botonIniciarSesion" href="login.php">Iniciar Sesion</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contacto</a>
