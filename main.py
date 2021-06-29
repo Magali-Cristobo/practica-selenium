@@ -34,6 +34,7 @@ def run_session(desired_cap):
   driver.find_element_by_id("iniciarSesion").click()
   driver.find_element_by_id("usuario").send_keys("test@gmail.com")
   driver.find_element_by_id("password").send_keys("testest123")
+  driver.save_screenshot('capturaInicioSesion.png')
   driver.find_element_by_tag_name("button").click()
 
   # formulario
