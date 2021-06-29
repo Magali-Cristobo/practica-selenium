@@ -22,15 +22,7 @@ caps=[{
       'browser_version': 'latest',
       'name': 'Parallel Test2',
       'build': 'browserstack-build-1'
-      },
-      {
-      'os_version': 'Big Sur',
-      'os': 'OS X',
-      'browser': 'safari',
-      'browser_version': 'latest',
-      'name': 'Parallel Test3',
-      'build': 'browserstack-build-1'
-}]
+      }]
 #run_session function searches for 'BrowserStack' on google.com
 def run_session(desired_cap):
   driver = webdriver.Remote(command_executor='https://magalicristobo_Fz0Gnv:LpCyrrE4krEc4FsgWQ93@hub-cloud.browserstack.com/wd/hub', desired_capabilities=desired_cap)
